@@ -6,6 +6,7 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         <activity android:name=".DashboardActivity"/>
+        <activity android:name=".WebActivity" android:exported="false"/>
 
         <activity
             android:name=".LoginActivity"

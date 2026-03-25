@@ -9,6 +9,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.launch
+import android.content.Intent
 
 class TaskFragment : Fragment() {
 
@@ -30,6 +31,13 @@ class TaskFragment : Fragment() {
         adapter = TaskAdapter(taskList)
         recycler.layoutManager = LinearLayoutManager(context)
         recycler.adapter = adapter
+
+        val webBtn = view.findViewById<Button>(R.id.btnWeb)
+
+        webBtn.setOnClickListener {
+            val intent = Intent(requireContext(), WebActivity::class.java)
+            startActivity(intent)
+        }
 
         // Add Task Dialog
         btn.setOnClickListener {
