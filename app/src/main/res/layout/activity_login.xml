@@ -1,18 +1,26 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:gravity="center"
+    android:background="@color/bg"
+    android:padding="24dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <EditText
         android:id="@+id/etName"
-        android:hint="Enter Name"
+        android:hint="Enter your name"
+        android:background="@drawable/card_bg"
+        android:padding="14dp"
+        android:textColor="@color/textPrimary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/btnLogin"
         android:text="Login"
+        android:background="@drawable/button_bg"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </LinearLayout>

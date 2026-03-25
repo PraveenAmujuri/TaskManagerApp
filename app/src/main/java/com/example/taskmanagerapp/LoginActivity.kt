@@ -20,18 +20,15 @@ class LoginActivity : AppCompatActivity() {
 
             val username = name.text.toString().trim()
 
-            // ✅ Validation
             if (username.isEmpty()) {
                 Toast.makeText(this, "Enter your name", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
-            // ✅ Save using DataStore
             lifecycleScope.launch {
                 saveName(this@LoginActivity, username)
             }
 
-            // ✅ Move to Dashboard
             val intent = Intent(this, DashboardActivity::class.java)
             intent.putExtra("USERNAME", username)
             startActivity(intent)

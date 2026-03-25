@@ -1,0 +1,8 @@
+<resources>
+    <color name="bg">#F5F1EA</color>         <!-- soft cream -->
+    <color name="card">#FFFFFF</color>       <!-- clean white -->
+    <color name="border">#E8E3DA</color>     <!-- warm border -->
+    <color name="textPrimary">#1F2937</color>
+    <color name="textSecondary">#6B7280</color>
+    <color name="button">#111827</color>
+</resources>
